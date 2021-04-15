@@ -5,7 +5,7 @@ for applicants from 0 to 1 predicting their compatibility with your current team
 
 ## Installation
 
-[Download] (https://github.com/cnakashima/CompatibilityPredictor/archive/refs/heads/master.zip) and unpack the repository.
+[Download](https://github.com/cnakashima/CompatibilityPredictor/archive/refs/heads/master.zip) and unpack the repository.
 
 ## Run
 
