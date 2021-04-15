@@ -11,19 +11,20 @@ for applicants from 0 to 1 predicting their compatibility with your current team
 
 ### On Mac
 
-1. From command line, navigate to the CompatibilityPredictor directory 
-2. move your .json file into the CompatibilityPredictor directory
+1. From command line, navigate to the CompatibilityPredictor-master directory created from unziping the repository.
+2. move your .json file into the CompatibilityPredictor directory.
 3. run `java -cp bash:lib/json-simple-1.1.1.jar Main JSONFileName.json`
 
 ### On Linux or Windows
 
-Out of a lack of familiarity I can give precise instructions to run on other systems. However, please feel free to open a new issue and I will try to help, as best I can.
+Out of a lack of familiarity I cannot give precise instructions to run on other systems. However, please feel free to open a new issue and I will try to help as best I can.
 
 ## Input
 
-Input should be in the form a .json file, which should be specified as the only command line argument.
+Input should be in the form of a .json file, which should be specified as the only command line argument.
 
 *Note: your .json file should be formatted as follows:*
+
 ```
 {
   "team": [
@@ -53,7 +54,7 @@ Input should be in the form a .json file, which should be specified as the only 
 
 ## Output
 
-Output will be in the form a JSON file called scoredApplicants.json, which will be created within the CompatibilityPredictor directory.
+Output will be in the form a JSON file called scoredApplicants.json, which will be created within the CompatibilityPredictor-master directory.
 
 ## Example Usage
 
