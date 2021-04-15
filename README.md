@@ -4,3 +4,4 @@ CompatibilityPredictor takes in a JSON file containing profiles of your current 
 for applicants from 0 to 1 predicting their compatibility with your current team. 
 
 ## Installation
+
