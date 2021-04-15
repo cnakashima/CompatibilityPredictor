@@ -14,6 +14,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 
+
 public class Main {
 
     private static final HashMap<String, Double> workAttributes;
@@ -38,6 +39,8 @@ public class Main {
         socialAttributes.put("spicyFoodTolerance", 0.0);
     }
 
+    @SuppressWarnings("unchecked")
+
     public static void main(String[] args) {
         // Cover if improper input is received
         if (args.length != 1) {
@@ -53,7 +56,6 @@ public class Main {
         // create instance of compatibility checker
         CompatibilityPredictor predictor = new CompatibilityPredictor(applicantsList, workAttributes, socialAttributes, teamSize);
         JSONArray scoredApplicants = predictor.createScoredApplicants();
-        System.out.println(scoredApplicants);
 
 
         // format into JSON file

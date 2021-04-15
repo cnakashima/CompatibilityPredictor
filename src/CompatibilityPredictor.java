@@ -20,6 +20,8 @@ public class CompatibilityPredictor {
         this.teamSize = teamSize;
     }
 
+    @SuppressWarnings("unchecked")
+
     /**
      * Creates a JSONArray of applicants used to write the JSON at the end
      *
@@ -95,12 +97,12 @@ public class CompatibilityPredictor {
         // socialScore will be the average of all the subscores for all social attributes
         double socialScore = 0;
         for (String attribute : socialAttributes.keySet()) {
-            // subscores are calculated by formula: 1 - (abs(applicantScore - averageScore)/10).
+            // subScores are calculated by formula: 1 - (abs(applicantScore - averageScore)/10).
             // This creates a score on the range of 0-1.
             double applicantAttributeScore = (Long) applicantAttributes.get(attribute);
             double difference = abs(applicantAttributeScore - socialAttributes.get(attribute));
-            double subscore = 1 - (difference / 10);
-            socialScore += subscore;
+            double subScore = 1 - (difference / 10);
+            socialScore += subScore;
         }
         socialScore /= socialAttributes.size();
         return socialScore;
